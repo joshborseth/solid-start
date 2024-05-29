@@ -13,6 +13,7 @@
     "@solidjs/meta": "^0.29.4",
     "@solidjs/router": "^0.13.3",
     "@solidjs/start": "^1.0.0",
+    "aws-iot-device-sdk-v2": "^1.19.5",
     "radash": "^12.1.0",
     "solid-js": "^1.8.17",
     "sst": "ion",
@@ -26,7 +27,12 @@
     "nitropack": "npm:nitropack-nightly@latest"
   },
   "devDependencies": {
+    "@types/node": "^20.11.26",
+    "@typescript-eslint/eslint-plugin": "^7.6.0",
+    "@typescript-eslint/parser": "^7.6.0",
     "autoprefixer": "^10.4.19",
+    "eslint": "^8.56.0",
+    "eslint-plugin-solid": "^0.13.2",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3"
   }

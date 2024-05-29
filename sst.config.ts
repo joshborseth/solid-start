@@ -1,3 +1,4 @@
+// eslint-disable-next-line
 /// <reference path="./.sst/platform/config.d.ts" />
 
 export default $config({
@@ -9,11 +10,11 @@ export default $config({
     };
   },
   async run() {
-    const bucket = new sst.aws.Bucket("MyBucket", {
-      public: true,
+    const realtime = new sst.aws.Realtime("MyRealtime", {
+      authorizer: "authorizer.handler",
     });
     new sst.aws.SolidStart("MyWeb", {
-      link: [bucket],
+      link: [realtime],
     });
   },
 });

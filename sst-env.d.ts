@@ -3,9 +3,10 @@
 import "sst"
 declare module "sst" {
   export interface Resource {
-    MyBucket: {
-      name: string
-      type: "sst.aws.Bucket"
+    MyRealtime: {
+      authorizer: string
+      endpoint: string
+      type: "sst.aws.Realtime"
     }
   }
 }
