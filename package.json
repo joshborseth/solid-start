@@ -1,0 +1,33 @@
+{
+  "name": "example-basic",
+  "type": "module",
+  "scripts": {
+    "build": "vinxi build",
+    "dev": "sst dev vinxi dev",
+    "start": "vinxi start",
+    "version": "vinxi version"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.583.0",
+    "@aws-sdk/s3-request-presigner": "^3.583.0",
+    "@solidjs/meta": "^0.29.4",
+    "@solidjs/router": "^0.13.3",
+    "@solidjs/start": "^1.0.0",
+    "radash": "^12.1.0",
+    "solid-js": "^1.8.17",
+    "sst": "ion",
+    "vinxi": "^0.3.11",
+    "zod": "^3.23.8"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "overrides": {
+    "nitropack": "npm:nitropack-nightly@latest"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  }
+}
